@@ -1,0 +1,62 @@
+CRITICAL - 2020-12-01 14:52:17 --> Trying to access array offset on value of type null
+#0 D:\xampp 7.4\htdocs\TPS\app\Views\template\app_template.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'D:\\xampp 7.4\\ht...', 68, Array)
+#1 D:\xampp 7.4\htdocs\TPS\system\View\View.php(246): include('D:\\xampp 7.4\\ht...')
+#2 D:\xampp 7.4\htdocs\TPS\system\View\View.php(257): CodeIgniter\View\View->render('template/app_te...', Array, true)
+#3 D:\xampp 7.4\htdocs\TPS\system\Common.php(1119): CodeIgniter\View\View->render('users/home', Array, true)
+#4 D:\xampp 7.4\htdocs\TPS\app\Controllers\Home.php(35): view('users/home', Array)
+#5 D:\xampp 7.4\htdocs\TPS\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#6 D:\xampp 7.4\htdocs\TPS\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\xampp 7.4\htdocs\TPS\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp 7.4\htdocs\TPS\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp 7.4\htdocs\TPS\system\Commands\Server\rewrite.php(34): require_once('D:\\xampp 7.4\\ht...')
+#10 {main}
+CRITICAL - 2020-12-01 14:52:57 --> Trying to access array offset on value of type null
+#0 D:\xampp 7.4\htdocs\TPS\app\Views\template\app_template.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'D:\\xampp 7.4\\ht...', 68, Array)
+#1 D:\xampp 7.4\htdocs\TPS\system\View\View.php(246): include('D:\\xampp 7.4\\ht...')
+#2 D:\xampp 7.4\htdocs\TPS\system\View\View.php(257): CodeIgniter\View\View->render('template/app_te...', Array, true)
+#3 D:\xampp 7.4\htdocs\TPS\system\Common.php(1119): CodeIgniter\View\View->render('users/home', Array, true)
+#4 D:\xampp 7.4\htdocs\TPS\app\Controllers\Home.php(35): view('users/home', Array)
+#5 D:\xampp 7.4\htdocs\TPS\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#6 D:\xampp 7.4\htdocs\TPS\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\xampp 7.4\htdocs\TPS\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp 7.4\htdocs\TPS\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp 7.4\htdocs\TPS\system\Commands\Server\rewrite.php(34): require_once('D:\\xampp 7.4\\ht...')
+#10 {main}
+CRITICAL - 2020-12-01 14:54:54 --> Trying to access array offset on value of type null
+#0 D:\xampp 7.4\htdocs\TPS\app\Filters\Access.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'D:\\xampp 7.4\\ht...', 34, Array)
+#1 D:\xampp 7.4\htdocs\TPS\system\Filters\Filters.php(173): App\Filters\Access->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 D:\xampp 7.4\htdocs\TPS\system\CodeIgniter.php(382): CodeIgniter\Filters\Filters->run('inputdata/2', 'before')
+#3 D:\xampp 7.4\htdocs\TPS\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp 7.4\htdocs\TPS\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp 7.4\htdocs\TPS\system\Commands\Server\rewrite.php(34): require_once('D:\\xampp 7.4\\ht...')
+#6 {main}
+CRITICAL - 2020-12-01 14:55:00 --> Trying to access array offset on value of type null
+#0 D:\xampp 7.4\htdocs\TPS\app\Filters\Access.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'D:\\xampp 7.4\\ht...', 34, Array)
+#1 D:\xampp 7.4\htdocs\TPS\system\Filters\Filters.php(173): App\Filters\Access->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 D:\xampp 7.4\htdocs\TPS\system\CodeIgniter.php(382): CodeIgniter\Filters\Filters->run('inputdata/1', 'before')
+#3 D:\xampp 7.4\htdocs\TPS\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp 7.4\htdocs\TPS\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp 7.4\htdocs\TPS\system\Commands\Server\rewrite.php(34): require_once('D:\\xampp 7.4\\ht...')
+#6 {main}
+CRITICAL - 2020-12-01 15:12:43 --> Trying to access array offset on value of type null
+#0 D:\xampp 7.4\htdocs\TPS\app\Views\users\input-data.php(111): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'D:\\xampp 7.4\\ht...', 111, Array)
+#1 D:\xampp 7.4\htdocs\TPS\system\View\View.php(246): include('D:\\xampp 7.4\\ht...')
+#2 D:\xampp 7.4\htdocs\TPS\system\Common.php(1119): CodeIgniter\View\View->render('users/input-dat...', Array, true)
+#3 D:\xampp 7.4\htdocs\TPS\app\Controllers\InputData.php(51): view('users/input-dat...', Array)
+#4 D:\xampp 7.4\htdocs\TPS\system\CodeIgniter.php(918): App\Controllers\InputData->index('5')
+#5 D:\xampp 7.4\htdocs\TPS\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#6 D:\xampp 7.4\htdocs\TPS\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp 7.4\htdocs\TPS\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp 7.4\htdocs\TPS\system\Commands\Server\rewrite.php(34): require_once('D:\\xampp 7.4\\ht...')
+#9 {main}
+CRITICAL - 2020-12-01 15:21:25 --> Trying to access array offset on value of type null
+#0 D:\xampp 7.4\htdocs\TPS\app\Views\users\input-data.php(111): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'D:\\xampp 7.4\\ht...', 111, Array)
+#1 D:\xampp 7.4\htdocs\TPS\system\View\View.php(246): include('D:\\xampp 7.4\\ht...')
+#2 D:\xampp 7.4\htdocs\TPS\system\Common.php(1119): CodeIgniter\View\View->render('users/input-dat...', Array, true)
+#3 D:\xampp 7.4\htdocs\TPS\app\Controllers\InputData.php(51): view('users/input-dat...', Array)
+#4 D:\xampp 7.4\htdocs\TPS\system\CodeIgniter.php(918): App\Controllers\InputData->index('5')
+#5 D:\xampp 7.4\htdocs\TPS\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#6 D:\xampp 7.4\htdocs\TPS\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp 7.4\htdocs\TPS\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp 7.4\htdocs\TPS\system\Commands\Server\rewrite.php(34): require_once('D:\\xampp 7.4\\ht...')
+#9 {main}
