@@ -80,6 +80,7 @@
                               <th style="width: 10px">#</th>
                               <th>Nama Kecamatan</th>
                               <th>Jumlah Kelurahan</th>
+                              <th>Total Penduduk</th>
                               <th class="text-right">Aksi</th>
                            </tr>
                         </thead>
@@ -99,6 +100,12 @@
                                        }
                                     }
                                     echo $i;
+                                    ?>
+                                 </td>
+                                 <td>
+                                    <?php
+                                    $result = $db->table('tbl_kelurahan')->where(['kecamatan_id' => $k['id']])->get()->getResuLtArray();
+                                    echo array_sum(array_column($result, 'total'));
                                     ?>
                                  </td>
                                  <td class="float-right">

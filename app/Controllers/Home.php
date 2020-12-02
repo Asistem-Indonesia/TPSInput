@@ -2,8 +2,10 @@
 
 namespace App\Controllers;
 
+use App\Models\HasilPemilihan;
 use App\Models\KecamatanModel;
 use App\Models\KelurahanModel;
+use App\Models\PaslonModel;
 use App\Models\UsersModel;
 
 class Home extends BaseController
@@ -13,6 +15,8 @@ class Home extends BaseController
 		$this->usersModel = new UsersModel();
 		$this->kelurahanModel = new KelurahanModel();
 		$this->kecamatanModel = new KecamatanModel();
+		$this->paslonModel = new PaslonModel();
+		$this->hasilPemilihanModel = new HasilPemilihan();
 		$this->validation = \Config\Services::validation();
 		$this->db = \Config\Database::connect();
 		$this->pager = \Config\Services::pager();
@@ -29,7 +33,12 @@ class Home extends BaseController
 			'pager' => $this->kelurahanModel->pager,
 			'user' => $this->usersModel->getUsers($this->idUserSession),
 			'kelurahan' => $kelurahan,
-			'currentPage' => ($this->request->getVar('page_tbl_kelurahan')) ? $this->request->getVar('page_tbl_kelurahan') : 1
+			'kecamatan' => $this->kecamatanModel->findAll(),
+			'paslon' => $this->paslonModel->findAll(),
+			'kecamatanModel' => $this->kecamatanModel,
+			'kelurahanModel' => $this->kelurahanModel,
+			'hasilPemilihanModel' => $this->hasilPemilihanModel,
+			'db' => $this->db
 		];
 
 		return view('users/home', $data);

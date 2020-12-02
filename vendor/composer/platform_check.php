@@ -9,9 +9,13 @@ if (!(PHP_VERSION_ID >= 70300)) {
 }
 
 $missingExtensions = array();
+extension_loaded('ctype') || $missingExtensions[] = 'ctype';
 extension_loaded('curl') || $missingExtensions[] = 'curl';
 extension_loaded('dom') || $missingExtensions[] = 'dom';
+extension_loaded('fileinfo') || $missingExtensions[] = 'fileinfo';
 extension_loaded('filter') || $missingExtensions[] = 'filter';
+extension_loaded('gd') || $missingExtensions[] = 'gd';
+extension_loaded('iconv') || $missingExtensions[] = 'iconv';
 extension_loaded('intl') || $missingExtensions[] = 'intl';
 extension_loaded('json') || $missingExtensions[] = 'json';
 extension_loaded('libxml') || $missingExtensions[] = 'libxml';
@@ -20,7 +24,10 @@ extension_loaded('phar') || $missingExtensions[] = 'phar';
 extension_loaded('simplexml') || $missingExtensions[] = 'simplexml';
 extension_loaded('tokenizer') || $missingExtensions[] = 'tokenizer';
 extension_loaded('xml') || $missingExtensions[] = 'xml';
+extension_loaded('xmlreader') || $missingExtensions[] = 'xmlreader';
 extension_loaded('xmlwriter') || $missingExtensions[] = 'xmlwriter';
+extension_loaded('zip') || $missingExtensions[] = 'zip';
+extension_loaded('zlib') || $missingExtensions[] = 'zlib';
 
 if ($missingExtensions) {
     $issues[] = 'Your Composer dependencies require the following PHP extensions to be installed: ' . implode(', ', $missingExtensions);

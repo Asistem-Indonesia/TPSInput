@@ -25,9 +25,21 @@ class KelurahanModel extends Model
       }
    }
 
+   public function getKelurahanByKecamatanId($kecamatan_id = false)
+   {
+      if ($kecamatan_id === false) {
+         return $this->findAll();
+      } else {
+         return $this->getWhere(['kecamatan_id' => $kecamatan_id])->getRowArray();
+      }
+   }
+
+
+
    public function searchByKelurahan($kelurahan)
    {
-      return $this->table($this->table)->like('kelurahan', $kelurahan)->get()->getRowArray();
+      $cari = "'" . $kelurahan . "'";
+      return $this->table($this->table)->like('kelurahan', $cari)->get()->getRowArray();
    }
 
    public function getKelurahanByKecamatan($id)

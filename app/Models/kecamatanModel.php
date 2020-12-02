@@ -41,4 +41,7 @@ class KecamatanModel extends Model
    {
       return $this->db->table($this->table)->delete(['id' => $id]);
    }
+
+
+   //cetak
 }

@@ -28,6 +28,7 @@ class Kecamatan extends BaseController
          'kelurahan' => $this->kelurahanModel->getKelurahan(),
          'user' => $this->usersModel->getUsers($this->idUserSession),
          'pager' => $this->kecamatanModel->pager,
+         'db' => $this->db,
          'currentPage' => ($this->request->getVar('page_tbl_kecamatan')) ? $this->request->getVar('page_tbl_kecamatan') : 1
       ];
       return view('menu/kecamatan/index', $data);

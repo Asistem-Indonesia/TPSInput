@@ -80,7 +80,7 @@ $routes->get('/inputdata/(:num)', 'InputData::index/$1', ['filter' => 'accessInp
 $routes->post('/inputdata/update', 'InputData::update');
 
 
-$routes->get('/', 'Home::index', ['filter' => 'access']);
+$routes->get('/', 'Auth::index', ['filter' => 'auth']);
 /**
  * --------------------------------------------------------------------
  * Additional Routing
