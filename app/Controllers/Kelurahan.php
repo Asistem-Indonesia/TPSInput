@@ -37,7 +37,7 @@ class Kelurahan extends BaseController
          'validation' => $this->validation,
          'titleMenu' => 'Kelurahan Manajement',
          'kecamatan' => $this->kecamatanModel->getKecamatan(),
-         'kelurahan' =>  $kelurahan->paginate(5, 'tbl_kelurahan'),
+         'kelurahan' =>  $kelurahan->paginate(20, 'tbl_kelurahan'),
          'kecamatanById' => $kecamatanById,
          'pager' => $this->kelurahanModel->pager,
          'tps' => $this->tpsModel->findAll(),
@@ -89,7 +89,7 @@ class Kelurahan extends BaseController
          }
       }
 
-      dd($this->request->getPost());
+
       if ($this->kelurahanModel->save([
          'kelurahan' => $this->request->getPost('kelurahan'),
          'kecamatan_id' => $this->request->getPost('kecamatan'),

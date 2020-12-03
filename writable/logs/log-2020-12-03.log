@@ -1,0 +1,11 @@
+CRITICAL - 2020-12-03 01:40:50 --> Undefined variable: totalHasil
+#0 D:\xampp 7.4\htdocs\TPSInput\app\Views\users\home.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp 7.4\\ht...', 70, Array)
+#1 D:\xampp 7.4\htdocs\TPSInput\system\View\View.php(246): include('D:\\xampp 7.4\\ht...')
+#2 D:\xampp 7.4\htdocs\TPSInput\system\Common.php(1119): CodeIgniter\View\View->render('users/home', Array, true)
+#3 D:\xampp 7.4\htdocs\TPSInput\app\Controllers\Home.php(44): view('users/home', Array)
+#4 D:\xampp 7.4\htdocs\TPSInput\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#5 D:\xampp 7.4\htdocs\TPSInput\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 D:\xampp 7.4\htdocs\TPSInput\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp 7.4\htdocs\TPSInput\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp 7.4\htdocs\TPSInput\system\Commands\Server\rewrite.php(34): require_once('D:\\xampp 7.4\\ht...')
+#9 {main}

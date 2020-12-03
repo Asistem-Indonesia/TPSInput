@@ -23,8 +23,9 @@ class Pager extends BaseConfig
 		'default_full'   => 'CodeIgniter\Pager\Views\default_full',
 		'default_simple' => 'CodeIgniter\Pager\Views\default_simple',
 		'default_head'   => 'CodeIgniter\Pager\Views\default_head',
-		'kelurahan_pagination' => 'App\Views\Pagers\kelurahan_pagination',
-		'kecamatan_pagination' => 'App\Views\Pagers\kecamatan_pagination'
+		'kelurahan_pagination' => 'CodeIgniter\Pager\Views\kelurahan_pagination',
+		'kecamatan_pagination' => 'CodeIgniter\Pager\Views\kecamatan_pagination',
+		'tps_pagination' => 'CodeIgniter\Pager\Views\tps_pagination'
 	];
 
 	/*

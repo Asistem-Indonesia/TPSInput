@@ -78,7 +78,7 @@ class Paslon extends BaseController
          foreach ($this->request->getFileMultiple('foto') as $img) {
             if ($img->isValid() && !$img->hasMoved()) {
                $randomName = $img->getRandomName();
-               $img->move(ROOTPATH . 'public/assets/users/paslon/', $randomName);
+               $img->move(ROOTPATH . '../public_html/assets/users/paslon/', $randomName);
             }
          }
       }
@@ -157,16 +157,17 @@ class Paslon extends BaseController
             //delete image sebelumnya
             $image_target = 'assets/users/paslon/' . $paslon['image'];
 
-            if (file_exists($image_target)) {
-               unlink($image_target);
-            }
-            if (!file_exists($image_target)) {
 
-               //update iamge baru
-               if ($img->isValid() && !$img->hasMoved()) {
-                  $randomName = $img->getRandomName();
-                  $img->move(ROOTPATH . 'public/assets/users/paslon/', $randomName);
+            if ($paslon['image'] != 'default.jpg') {
+               if (file_exists($image_target)) {
+                  unlink($image_target);
                }
+            }
+
+            //update iamge baru
+            if ($img->isValid() && !$img->hasMoved()) {
+               $randomName = $img->getRandomName();
+               $img->move(ROOTPATH . '../public_html/assets/users/paslon/', $randomName);
             }
          }
       }

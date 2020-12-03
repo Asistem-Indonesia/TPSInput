@@ -10,7 +10,7 @@ class KelurahanModel extends Model
    protected $primaryKey = 'id';
    protected $useTimestamps = true;
    protected $dateFormat = 'int';
-   protected $allowedFields = ['kelurahan', 'kecamatan_id'];
+   protected $allowedFields = ['kelurahan', 'kecamatan_id', 'total'];
 
    protected $createdField  = 'created_at';
    protected $updatedField  = 'updated_at';

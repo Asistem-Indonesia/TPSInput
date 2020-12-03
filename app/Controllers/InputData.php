@@ -74,7 +74,7 @@ class InputData extends BaseController
          return view('users/input-data/' . $id . '?edit=' . $this->request->getPost('edit'), $data);
       }
 
-      return view('users/input-data', $data);
+      return view('users/input-data2', $data);
    }
 
 
@@ -84,9 +84,15 @@ class InputData extends BaseController
       $n = 0;
       for ($i = 0; $i < count($this->request->getPost('calon_id')); $i++) {
 
+
          $suara = $this->request->getPost('suara');
          $hasilsuara = $suara[$i];
 
+
+         if ($hasilsuara == null) {
+            session()->setFlashdata('pesan', 'Jangan kosong');
+            return redirect()->to('/inputdata/'  . $this->request->getPost('kelurahan_id') . '?edit=' . $this->request->getPost('tps_id') . '#' . $this->request->getPost('tps_id'))->withInput()->with('validation', $this->validation);
+         }
          $calon_id = $this->request->getPost('calon_id');
          $calon_id = $calon_id[$i];
 
@@ -115,7 +121,7 @@ class InputData extends BaseController
 
       session()->setFlashdata('pesan', 'Berhasil di Update');
 
-      return redirect()->to('/inputdata/' . $this->request->getPost('kelurahan_id'))->withInput()->with('validation', $this->validation);
+      return redirect()->to('/inputdata/'  . $this->request->getPost('kelurahan_id') .  '#' . $this->request->getPost('tps_id'));
    }
    //--------------------------------------------------------------------
 

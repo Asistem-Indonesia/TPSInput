@@ -36,7 +36,7 @@ class Tps extends BaseController
          'validation' => $this->validation,
          'titleMenu' => 'TPS Manajement',
          'kelurahan' => $this->kelurahanModel->getKelurahan(),
-         'tps' =>  $tps->paginate(5, 'tbl_kelurahan'),
+         'tps' =>  $tps->paginate(20, 'tbl_tps'),
          'kelurahanByid' => $kelurahanByid,
          'pager' => $this->tpsModel->pager,
          'user' => $this->usersModel->getUsers($this->idUserSession),
@@ -47,6 +47,7 @@ class Tps extends BaseController
 
    public function create()
    {
+
       if ($this->request->getPost('kecamatan')) {
 
          //validation include
@@ -57,36 +58,31 @@ class Tps extends BaseController
                   'required' => 'pilih kelurahan!',
                ]
             ],
-            'tps' => [
+            'jmltps' => [
                'rules' =>   'required|trim',
                'errors' => [
-                  'required' => 'nama tps tidak boleh kosong!',
+                  'required' => 'jumlah tps tidak boleh kosong!',
                ]
             ]
          ])) {
             return redirect()->to('/tps/create?kecamatan=' . $this->request->getPost('kecamatan'))->withInput()->with('validation', $this->validation);
          }
+         $jml = $this->request->getPost('jmltps');
+         for ($i = 1; $i <= $jml; $i++) {
+            $tps = 'TPS ' . $i;
 
-         if ($this->tpsModel->save([
-            'tps' => $this->request->getPost('tps'),
-            'kelurahan_id' => $this->request->getPost('kelurahan'),
-         ])) {
-            session()->setFlashdata('pesan', '<div class="alert alert-success" role="alert">
+            $this->tpsModel->save([
+               'tps' => $tps,
+               'kelurahan_id' => $this->request->getPost('kelurahan'),
+            ]);
+         }
+         session()->setFlashdata('pesan', '<div class="alert alert-success" role="alert">
             Data ' . $this->request->getPost('tps') . ' berhasil disimpan
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
             </button>
             </div>');
-            return redirect()->to('/tps');
-         } else {
-            session()->setFlashdata('pesan', '<div class="alert alert-danger" role="alert">
-            Data TPS gagal tersimpan
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-            </button>
-            </div>');
-            return redirect()->to('/tps')->withInput()->with('validation', $this->validation);
-         }
+         return redirect()->to('/tps');
       } else {
 
 

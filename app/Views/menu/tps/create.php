@@ -83,12 +83,19 @@
                               </div>
                            </div>
                            <div class="form-group">
+                              <label for="jmltps" class="col-form-label">Jumlah TPS</label>
+                              <input type="text" name="jmltps" class="form-control  <?= ($validation->hasError('jmltps')) ? 'is-invalid' : ''; ?>" value="<?= old('jmltps'); ?>" placeholder="jumlah TPS" id="jmltps">
+                              <div class="invalid-feedback pl-4">
+                                 <span class="text-danger"><?= $validation->getError('jmltps'); ?></span>
+                              </div>
+                           </div>
+                           <!-- <div class="form-group">
                               <label for="tps" class="col-form-label">Nama TPS</label>
                               <input type="text" name="tps" class="form-control  <?= ($validation->hasError('tps')) ? 'is-invalid' : ''; ?>" value="<?= old('tps'); ?>" placeholder="nama tps" id="tps">
                               <div class="invalid-feedback pl-4">
                                  <span class="text-danger"><?= $validation->getError('tps'); ?></span>
                               </div>
-                           </div>
+                           </div> -->
                         </div>
                         <div class="modal-footer">
                            <a href="<?= base_url('/tps'); ?>" class="btn btn-secondary" data-dismiss="modal">Kembali</a>

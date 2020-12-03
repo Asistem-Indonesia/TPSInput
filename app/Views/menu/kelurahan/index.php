@@ -90,7 +90,7 @@
                         </thead>
                         <tbody>
                            <?php
-                           $no = 1 + (10 * ($currentPage - 1));
+                           $no = 1 + (20 * ($currentPage - 1));
                            foreach ($kelurahan as $k) : ?>
                               <tr>
                                  <td><?= $no++; ?></td>

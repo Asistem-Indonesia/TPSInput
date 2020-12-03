@@ -8,6 +8,7 @@
       <div class="card card-outline card-primary">
          <div class="card-header text-center">
             <a href="" class="h1"><b>Aplikasi </b>TPS</a>
+            <p>(Alpha Version)</p>
          </div>
          <div class="card-body">
             <?php if (session()->getFlashdata('pesan')) : ?>

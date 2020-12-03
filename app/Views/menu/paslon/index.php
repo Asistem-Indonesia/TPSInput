@@ -61,7 +61,7 @@
                                        <select name="no_urut" class="custom-select <?= ($validation->hasError('no_urut')) ? 'is-invalid' : ''; ?>" id="no_urut">
                                           <option value="">-- Pilih No--</option>
                                           <?php
-                                          for ($i = 1; $i <= 10; $i++) { ?>
+                                          for ($i = 1; $i <= 4; $i++) { ?>
                                              <option value="No Urut <?= $i; ?>"> No Urut <?= $i; ?></option>
                                           <?php } ?>
                                        </select>
@@ -121,7 +121,7 @@
                                  <div class="card-body pt-0">
                                     <div class="row">
                                        <div class="col-12 text-center p-3">
-                                          <img src="<?= base_url('assets/users/paslon/' . $p['image']); ?>" alt="<?= $p['image']; ?>" class="img-circle img-fluid img-thumbnail" style="width: 120px; height: 120px;">
+                                          <img src="<?= base_url('assets/users/paslon/' . $p['image']); ?>" class="img-circle img-fluid img-thumbnail" style="width: 120px; height: 120px;">
                                        </div>
                                        <div class="col-12 text-center">
                                           <h2 class="lead"><b><?= $p['nama_calon']; ?></b></h2>

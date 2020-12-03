@@ -12,6 +12,7 @@ $db = db_connect();
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <title><?= $title; ?></title>
+   <link rel="icon" href="<?= base_url() ?>/favicon.gif" type="image/gif">
 
    <!-- Google Font: Source Sans Pro -->
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -182,7 +183,7 @@ $db = db_connect();
 
       <footer class="main-footer">
          <div class="float-right d-none d-sm-block">
-            <b>Version</b> 1.0 (Development)
+            <b>Version</b>(Alpha)
          </div>
          <strong>Copyright &copy; 2020 Aplikasi TPS.</strong> All rights reserved.
       </footer>

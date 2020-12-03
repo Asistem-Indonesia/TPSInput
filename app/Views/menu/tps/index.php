@@ -77,13 +77,12 @@
                               <th style="width: 10px">#</th>
                               <th>Nama TPS</th>
                               <th>Nama Kelurahan</th>
-                              <th>Jumlah Suara</th>
                               <th class="text-right">Aksi</th>
                            </tr>
                         </thead>
                         <tbody>
                            <?php
-                           $no = 1 + (10 * ($currentPage - 1));
+                           $no = 1 + (20 * ($currentPage - 1));
                            foreach ($tps as $tps) : ?>
                               <tr>
                                  <td><?= $no++; ?></td>
@@ -98,7 +97,6 @@
                                     }
                                     ?>
                                  </td>
-                                 <td>0</td>
                                  <td class="float-right">
                                     <a href="<?= base_url('tps/' . encrypt_url($tps['id'])) . '/edit'; ?>" class="btn btn-outline-info"><i class="fas fa-edit"></i></a>
 
@@ -132,7 +130,7 @@
                         </tbody>
                      </table>
                      <div class="card-footer clearfix">
-                        <?= $pager->links('tbl_kelurahan', 'kelurahan_pagination'); ?>
+                        <?= $pager->links('tbl_tps', 'tps_pagination'); ?>
                      </div>
                   </div>
                   <!-- /.card-body -->

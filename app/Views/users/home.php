@@ -142,10 +142,28 @@
 
                                     ?>
                                     <label><?= $kc['kecamatan']; ?></label>
+
+                                    <?php
+                                    $kc_id = $kc['id'];
+                                    $paslon_id =  $pd['id'];
+                                    $queryB = "SELECT * FROM tbl_hasil_pemilihan JOIN tbl_tps ON tbl_hasil_pemilihan.tps_id = tbl_tps.id 
+                                          JOIN tbl_kelurahan ON tbl_tps.kelurahan_id = tbl_kelurahan.id WHERE tbl_kelurahan.kecamatan_id = $kc_id AND tbl_hasil_pemilihan.calon_id = $paslon_id
+                                       ";
+                                    $result = $db->query($queryB)->getResultArray();
+                                    $hasilPaslonPerKecamatan = (!empty($result)) ? array_sum(array_column($result, 'hasil')) : 0;
+
+                                    //hitung
+
+                                    if ($totalWargaPerKecamatan) {
+                                       $persenPaslonPerKecamatan = ($hasilPaslonPerKecamatan / $totalWargaPerKecamatan) * 100;
+                                    } else {
+                                       $persenPaslonPerKecamatan = 0;
+                                    }
+                                    ?>
                                     <div class="progress mb-3">
-                                       <div class="progress-bar bg-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                                          <span class="sr-only">40% Complete (success)</span>
-                                          30 % (278 suara)
+                                       <div class="progress-bar bg-info" role="progressbar" aria-valuenow="<?= $persenPaslonPerKecamatan; ?>" aria-valuemin="0" aria-valuemax="100" style="width: <?= $persenPaslonPerKecamatan; ?>%">
+                                          <span class="sr-only"><?= $persenPaslonPerKecamatan; ?>% Complete (success)</span>
+                                          <?= $persenPaslonPerKecamatan; ?>% (<?= $hasilPaslonPerKecamatan; ?> suara)
                                        </div>
                                     </div>
                                  <?php endforeach; ?>
