@@ -126,7 +126,6 @@
                                        <div class="col-12 text-center">
                                           <h2 class="lead"><b><?= $p['nama_calon']; ?></b></h2>
                                           <h2 class="lead"><b><?= $p['nama_wakil_calon']; ?></b></h2>
-                                          <p class="text-muted text-sm"><b>Jumlah suara : 500 </b> </p>
                                        </div>
                                     </div>
                                  </div>

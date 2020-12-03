@@ -15,4 +15,9 @@ class SubMenuModel extends Model
    protected $createdField  = 'created_at';
    protected $updatedField  = 'updated_at';
    protected $deletedField  = 'deleted_at';
+
+   public function getSubmenuByMenu($menu_id = null)
+   {
+      return $this->getWhere(['menu_id' => $menu_id])->getResultArray();
+   }
 }

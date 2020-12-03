@@ -68,8 +68,25 @@ class Tps extends BaseController
             return redirect()->to('/tps/create?kecamatan=' . $this->request->getPost('kecamatan'))->withInput()->with('validation', $this->validation);
          }
          $jml = $this->request->getPost('jmltps');
+
          for ($i = 1; $i <= $jml; $i++) {
-            $tps = 'TPS ' . $i;
+            $cekKelurahan = $this->tpsModel->getLastTpsByKelurahanId($this->request->getPost('kelurahan'));
+
+
+            if ($cekKelurahan) {
+               $lastnomorTPS = intval(preg_replace("/[^0-9]/", "", $cekKelurahan->tps));
+            } else {
+               $lastnomorTPS = 0;
+            }
+
+            $nomorTps = $lastnomorTPS + 1;
+
+
+            $tps = 'TPS ' . $nomorTps;
+
+
+
+
 
             $this->tpsModel->save([
                'tps' => $tps,

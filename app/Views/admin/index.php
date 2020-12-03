@@ -24,34 +24,34 @@
    <section class="content">
       <div class="container-fluid">
          <div class="row">
-            <div class="col-12">
-               <!-- Default box -->
-               <div class="card">
-                  <div class="card-header">
-                     <h3 class="card-title">Title</h3>
+            <?php
+            $db
+            ?>
+            <?php foreach ($menuMenu as $m) : ?>
 
-                     <div class="card-tools">
-                        <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
-                           <i class="fas fa-minus"></i>
-                        </button>
-                        <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
-                           <i class="fas fa-times"></i>
-                        </button>
+
+               <div class="col-lg-2 col-md-4 col-sm-12">
+                  <a href="<?= base_url('/' . $m['url']); ?>">
+                     <div class="card p-2" style="height: 180px;">
+                        <div class="card-body text-center text-secondary">
+                           <div class="row">
+                              <div class="col-12 mb-3">
+
+                                 <i class="<?= $m['icon']; ?> fa-4x"></i>
+                              </div>
+                              <div class="col-12">
+                                 <h4><?= $m['submenu']; ?></h4>
+                              </div>
+                           </div>
+                        </div>
                      </div>
-                  </div>
-                  <div class="card-body">
-                     Start creating your amazing application!
-                  </div>
-                  <!-- /.card-body -->
-                  <div class="card-footer">
-                     Footer
-                  </div>
-                  <!-- /.card-footer-->
+                  </a>
                </div>
-               <!-- /.card -->
-            </div>
+            <?php endforeach; ?>
+            <!-- /.card -->
          </div>
       </div>
+
    </section>
    <!-- /.content -->
 </div>

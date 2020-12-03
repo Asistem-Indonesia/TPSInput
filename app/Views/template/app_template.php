@@ -63,7 +63,7 @@ $db = db_connect();
          <!-- Brand Logo -->
          <a class="brand-link">
             <img src="<?= base_url('assets/dist/img/AdminLTELogo.png'); ?>" alt="AdminLTE Logo" class="brand-image img-circle" style="opacity: .8">
-            <span class="brand-text font-weight-light font-weight-bold">Aplikasi TPS</span>
+            <span class="brand-text font-weight-light font-weight-bold">Aplikasi TPS <small class="font-weight-light">(Beta)</small></span>
          </a>
 
          <!-- Sidebar -->
@@ -183,7 +183,7 @@ $db = db_connect();
 
       <footer class="main-footer">
          <div class="float-right d-none d-sm-block">
-            <b>Version</b>(Alpha)
+            <b>Version</b>(Beta)
          </div>
          <strong>Copyright &copy; 2020 Aplikasi TPS.</strong> All rights reserved.
       </footer>

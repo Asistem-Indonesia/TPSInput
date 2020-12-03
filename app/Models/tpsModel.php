@@ -25,6 +25,11 @@ class TpsModel extends Model
       }
    }
 
+   public function getLastTpsByKelurahanId($kelurahan_id = null)
+   {
+      return $this->getWhere(['kelurahan_id' => $kelurahan_id])->getLastRow();
+   }
+
    public function getTpsByKelurahanId($id, $search = null)
    {
       if ($search) {

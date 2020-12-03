@@ -25,6 +25,11 @@ class KelurahanModel extends Model
       }
    }
 
+   public function getKelurahanByName($name = false)
+   {
+      return $this->getWhere(['kelurahan' => $name])->getRowArray();
+   }
+
    public function getKelurahanByKecamatanId($kecamatan_id = false)
    {
       if ($kecamatan_id === false) {
