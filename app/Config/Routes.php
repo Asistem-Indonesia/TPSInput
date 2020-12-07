@@ -41,6 +41,7 @@ $routes->get('/admin', 'Admin::index', ['filter' => 'access']);
 
 // Route for menu users
 $routes->get('/users', 'Users::index', ['filter' => 'access']);
+$routes->get('/users/index', 'Kelurahan::index', ['filter' => 'access']);
 $routes->post('/users/create', 'Users::create', ['filter' => 'access']);
 $routes->get('/users/(:any)/edit', 'Users::edit/$1', ['filter' => 'access']);
 $routes->post('/users/update', 'Users::update', ['filter' => 'access']);
@@ -49,6 +50,7 @@ $routes->post('/users/changePassword', 'Users::changepassword', ['filter' => 'ac
 
 // Route for menu kecamatan
 $routes->get('/kecamatan', 'Kecamatan::index', ['filter' => 'access']);
+$routes->get('/kecamatan/index', 'Kelurahan::index', ['filter' => 'access']);
 $routes->post('/kecamatan/create', 'Kecamatan::create', ['filter' => 'access']);
 $routes->get('/kecamatan/(:any)/edit', 'Kecamatan::edit/$1', ['filter' => 'access']);
 $routes->post('/kecamatan/update', 'Kecamatan::update', ['filter' => 'access']);
@@ -57,6 +59,7 @@ $routes->post('/kecamatan/delete', 'Kecamatan::delete', ['filter' => 'access']);
 
 // Route for menu Kelurahan
 $routes->get('/kelurahan', 'Kelurahan::index', ['filter' => 'access']);
+$routes->get('/kelurahan/index', 'Kelurahan::index', ['filter' => 'access']);
 $routes->post('/kelurahan/create', 'Kelurahan::create', ['filter' => 'access']);
 $routes->get('/kelurahan/(:any)/edit', 'Kelurahan::edit/$1', ['filter' => 'access']);
 $routes->post('/kelurahan/update', 'Kelurahan::update', ['filter' => 'access']);
@@ -64,11 +67,12 @@ $routes->post('/kelurahan/delete', 'Kelurahan::delete', ['filter' => 'access']);
 
 //Route for TPS 
 $routes->get('/tps', 'Tps::index', ['filter' => 'access']);
-$routes->get('/tps/create', 'Tps::create', ['filter' => 'access']);
-$routes->post('/tps/create', 'Tps::create', ['filter' => 'access']);
-$routes->get('/tps/(:any)/edit', 'Tps::edit/$1', ['filter' => 'access']);
-$routes->post('/tps/update', 'Tps::update', ['filter' => 'access']);
-$routes->post('/tps/delete', 'Tps::delete', ['filter' => 'access']);
+$routes->get('/tps/index', 'Tps::index');
+$routes->get('/tps/create', 'Tps::create');
+$routes->post('/tps/create', 'Tps::create');
+$routes->get('/tps/(:any)/edit', 'Tps::edit/$1');
+$routes->post('/tps/update', 'Tps::update');
+$routes->post('/tps/delete', 'Tps::delete');
 
 
 //Route for Paslon
@@ -81,6 +85,9 @@ $routes->post('/inputdata/update', 'InputData::update');
 
 
 $routes->get('/', 'Auth::index', ['filter' => 'auth']);
+
+//REST API
+$routes->get('/api/paslon', 'APIPaslon::index');
 /**
  * --------------------------------------------------------------------
  * Additional Routing

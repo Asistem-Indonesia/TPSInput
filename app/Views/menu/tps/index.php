@@ -37,7 +37,7 @@
                      <form action="" method="GET">
                         <input type="text" name="search" id="search" class="w-25 form-control float-left mr-2" placeholder="Nama Kelurahan">
                         <button type="submit" class="btn btn-primary">Cari</button>
-                        <a href="<?= base_url('/tps'); ?>" class="btn btn-secondary">Reset</a>
+                        <a href="<?= base_url('/tps/index'); ?>" class="btn btn-secondary">Reset</a>
                      </form>
                   </div>
                </div>

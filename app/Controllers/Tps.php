@@ -11,6 +11,7 @@ class Tps extends BaseController
 {
    public function __construct()
    {
+
       $this->usersModel = new UsersModel();
       $this->tpsModel = new TpsModel();
       $this->kelurahanModel = new KelurahanModel();
@@ -23,6 +24,10 @@ class Tps extends BaseController
    }
    public function index()
    {
+      if (session()->get('role_id') != 1) {
+         return redirect()->to('/auth');
+      }
+
       if (!empty($this->request->getVar('search'))) {
          $tps =  $this->tpsModel->searchKelurahan($this->request->getVar('search'));
          $kelurahanByid = $this->kelurahanModel->searchByKelurahan($this->request->getVar('search')) ? $this->kelurahanModel->searchByKelurahan($this->request->getVar('search')) : null;
@@ -47,6 +52,9 @@ class Tps extends BaseController
 
    public function create()
    {
+      if (session()->get('role_id') != 1) {
+         return redirect()->to('/auth');
+      }
 
       if ($this->request->getPost('kecamatan')) {
 
@@ -99,7 +107,7 @@ class Tps extends BaseController
             <span aria-hidden="true">&times;</span>
             </button>
             </div>');
-         return redirect()->to('/tps');
+         return redirect()->to('/tps/index');
       } else {
 
 
@@ -124,6 +132,10 @@ class Tps extends BaseController
 
    public function edit($id = null)
    {
+      if (session()->get('role_id') != 1) {
+         return redirect()->to('/auth');
+      }
+
       $data = [
          'title' => 'TPS Manajement',
          'validation' => $this->validation,
@@ -176,7 +188,7 @@ class Tps extends BaseController
       <span aria-hidden="true">&times;</span>
       </button>
       </div>');
-         return redirect()->to('/tps');
+         return redirect()->to('/tps/index');
       } else {
          session()->setFlashdata('pesan', '<div class="alert alert-danger" role="alert">
       Data gagal di update
@@ -198,7 +210,7 @@ class Tps extends BaseController
       <span aria-hidden="true">&times;</span>
       </button>
       </div>');
-         return redirect()->to('/tps');
+         return redirect()->to('/tps/index');
       } else {
          session()->setFlashdata('pesan', '<div class="alert alert-danger" role="alert">
       Data gagal di delete
@@ -206,7 +218,7 @@ class Tps extends BaseController
       <span aria-hidden="true">&times;</span>
       </button>
       </div>');
-         return redirect()->to('/tps')->withInput()->with('validation', $this->validation);
+         return redirect()->to('/tps/index')->withInput()->with('validation', $this->validation);
       }
    }
 

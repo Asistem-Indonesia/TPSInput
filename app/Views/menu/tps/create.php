@@ -17,6 +17,7 @@
                         Menu Admin
                      </a>
                   </li>
+                  <li class="breadcrumb-item active"> <a href="<?= base_url('/tps/index'); ?>"><?= $title; ?></a></li>
                   <li class="breadcrumb-item active"><?= $titleMenu ?></li>
                </ol>
             </div>
@@ -98,7 +99,7 @@
                            </div> -->
                         </div>
                         <div class="modal-footer">
-                           <a href="<?= base_url('/tps'); ?>" class="btn btn-secondary" data-dismiss="modal">Kembali</a>
+                           <a href="<?= base_url('/tps/index'); ?>" class="btn btn-secondary" data-dismiss="modal">Kembali</a>
                            <button type="submit" class="btn btn-primary">Simpan</button>
                         </div>
                      </form>

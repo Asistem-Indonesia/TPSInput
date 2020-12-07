@@ -1,0 +1,140 @@
+CRITICAL - 2020-12-04 03:43:48 --> Cannot use object of type stdClass as array
+#0 /home/u1108168/tpsInput/system/CodeIgniter.php(918): App\Controllers\Tps->create()
+#1 /home/u1108168/tpsInput/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tps))
+#2 /home/u1108168/tpsInput/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/u1108168/public_html/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-04 03:44:33 --> Cannot use object of type stdClass as array
+#0 /home/u1108168/tpsInput/system/CodeIgniter.php(918): App\Controllers\Tps->create()
+#1 /home/u1108168/tpsInput/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tps))
+#2 /home/u1108168/tpsInput/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/u1108168/public_html/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-04 03:45:44 --> Cannot use object of type stdClass as array
+#0 /home/u1108168/tpsInput/system/CodeIgniter.php(918): App\Controllers\Tps->create()
+#1 /home/u1108168/tpsInput/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tps))
+#2 /home/u1108168/tpsInput/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/u1108168/public_html/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-04 03:46:47 --> Call to undefined method App\Models\TpsModel::getLastRow
+#0 /home/u1108168/tpsInput/app/Models/TpsModel.php(30): CodeIgniter\Model->__call('getLastRow', Array)
+#1 /home/u1108168/tpsInput/app/Controllers/Tps.php(74): App\Models\TpsModel->getLastTpsByKelurahanId('1')
+#2 /home/u1108168/tpsInput/system/CodeIgniter.php(918): App\Controllers\Tps->create()
+#3 /home/u1108168/tpsInput/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tps))
+#4 /home/u1108168/tpsInput/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home/u1108168/public_html/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-04 03:48:24 --> Call to undefined method stdClass::getRowArray()
+#0 /home/u1108168/tpsInput/system/CodeIgniter.php(918): App\Controllers\Tps->create()
+#1 /home/u1108168/tpsInput/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tps))
+#2 /home/u1108168/tpsInput/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/u1108168/public_html/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-04 03:48:35 --> Call to undefined method stdClass::getArray()
+#0 /home/u1108168/tpsInput/system/CodeIgniter.php(918): App\Controllers\Tps->create()
+#1 /home/u1108168/tpsInput/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tps))
+#2 /home/u1108168/tpsInput/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/u1108168/public_html/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-04 03:48:55 --> Cannot use object of type stdClass as array
+#0 /home/u1108168/tpsInput/system/CodeIgniter.php(918): App\Controllers\Tps->create()
+#1 /home/u1108168/tpsInput/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tps))
+#2 /home/u1108168/tpsInput/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/u1108168/public_html/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-04 03:49:13 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getLastRowArray()
+#0 /home/u1108168/tpsInput/app/Controllers/Tps.php(74): App\Models\TpsModel->getLastTpsByKelurahanId('1')
+#1 /home/u1108168/tpsInput/system/CodeIgniter.php(918): App\Controllers\Tps->create()
+#2 /home/u1108168/tpsInput/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tps))
+#3 /home/u1108168/tpsInput/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/u1108168/public_html/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-04 03:57:42 --> A non-numeric value encountered
+#0 /home/u1108168/tpsInput/app/Controllers/Tps.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', '/home/u1108168/...', 85, Array)
+#1 /home/u1108168/tpsInput/system/CodeIgniter.php(918): App\Controllers\Tps->create()
+#2 /home/u1108168/tpsInput/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tps))
+#3 /home/u1108168/tpsInput/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/u1108168/public_html/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-04 04:01:27 --> A non-numeric value encountered
+#0 /home/u1108168/tpsInput/app/Controllers/Tps.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', '/home/u1108168/...', 85, Array)
+#1 /home/u1108168/tpsInput/system/CodeIgniter.php(918): App\Controllers\Tps->create()
+#2 /home/u1108168/tpsInput/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tps))
+#3 /home/u1108168/tpsInput/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/u1108168/public_html/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-04 04:45:11 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''' at line 5
+#0 /home/u1108168/tpsInput/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT `tbl_tps...')
+#1 /home/u1108168/tpsInput/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_tps...')
+#2 /home/u1108168/tpsInput/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_tps...')
+#3 /home/u1108168/tpsInput/system/Model.php(1814): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_tps...')
+#4 /home/u1108168/tpsInput/app/Models/TpsModel.php(48): CodeIgniter\Model->__call('query', Array)
+#5 /home/u1108168/tpsInput/app/Controllers/InputData.php(41): App\Models\TpsModel->getTpsByKelurahanId('16', ''%TPS 1'%'')
+#6 /home/u1108168/tpsInput/system/CodeIgniter.php(918): App\Controllers\InputData->index('16')
+#7 /home/u1108168/tpsInput/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#8 /home/u1108168/tpsInput/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/u1108168/public_html/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-12-04 04:52:28 --> Uncaught Error: Call to undefined method CodeIgniter\Debug\Exceptions::extend() in /home/u1108168/tpsInput/app/Views/errors/html/error_404.php:1
+Stack trace:
+#0 /home/u1108168/tpsInput/system/Debug/Exceptions.php(308): include()
+#1 /home/u1108168/tpsInput/system/Debug/Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-04 04:54:30 --> Uncaught Error: Call to undefined method CodeIgniter\Debug\Exceptions::extend() in /home/u1108168/tpsInput/app/Views/errors/html/error_404.php:1
+Stack trace:
+#0 /home/u1108168/tpsInput/system/Debug/Exceptions.php(308): include()
+#1 /home/u1108168/tpsInput/system/Debug/Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-04 04:54:34 --> Uncaught Error: Call to undefined method CodeIgniter\Debug\Exceptions::extend() in /home/u1108168/tpsInput/app/Views/errors/html/error_404.php:1
+Stack trace:
+#0 /home/u1108168/tpsInput/system/Debug/Exceptions.php(308): include()
+#1 /home/u1108168/tpsInput/system/Debug/Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-04 04:54:41 --> Uncaught Error: Call to undefined method CodeIgniter\Debug\Exceptions::extend() in /home/u1108168/tpsInput/app/Views/errors/html/error_404.php:1
+Stack trace:
+#0 /home/u1108168/tpsInput/system/Debug/Exceptions.php(308): include()
+#1 /home/u1108168/tpsInput/system/Debug/Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-04 04:56:09 --> Uncaught Error: Call to undefined method CodeIgniter\Debug\Exceptions::extend() in /home/u1108168/tpsInput/app/Views/errors/html/error_404.php:1
+Stack trace:
+#0 /home/u1108168/tpsInput/system/Debug/Exceptions.php(308): include()
+#1 /home/u1108168/tpsInput/system/Debug/Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-04 04:56:22 --> Uncaught Error: Call to undefined method CodeIgniter\Debug\Exceptions::extend() in /home/u1108168/tpsInput/app/Views/errors/html/error_404.php:1
+Stack trace:
+#0 /home/u1108168/tpsInput/system/Debug/Exceptions.php(308): include()
+#1 /home/u1108168/tpsInput/system/Debug/Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-04 04:57:12 --> Uncaught Error: Call to undefined method CodeIgniter\Debug\Exceptions::extend() in /home/u1108168/tpsInput/app/Views/errors/html/error_404.php:1
+Stack trace:
+#0 /home/u1108168/tpsInput/system/Debug/Exceptions.php(308): include()
+#1 /home/u1108168/tpsInput/system/Debug/Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}

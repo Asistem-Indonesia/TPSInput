@@ -9,3 +9,63 @@ CRITICAL - 2020-12-03 01:40:50 --> Undefined variable: totalHasil
 #7 D:\xampp 7.4\htdocs\TPSInput\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #8 D:\xampp 7.4\htdocs\TPSInput\system\Commands\Server\rewrite.php(34): require_once('D:\\xampp 7.4\\ht...')
 #9 {main}
+CRITICAL - 2020-12-03 04:30:38 --> Invalid file: App\Views\Pagers\kecamatan_pagination.php
+#0 /home/u1108168/tpsInput/system/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Views\\Pager...')
+#1 /home/u1108168/tpsInput/system/Pager/Pager.php(186): CodeIgniter\View\View->render('App\\Views\\Pager...')
+#2 /home/u1108168/tpsInput/system/Pager/Pager.php(121): CodeIgniter\Pager\Pager->displayLinks('tbl_kecamatan', 'kecamatan_pagin...')
+#3 /home/u1108168/tpsInput/app/Views/menu/kecamatan/index.php(144): CodeIgniter\Pager\Pager->links('tbl_kecamatan', 'kecamatan_pagin...')
+#4 /home/u1108168/tpsInput/system/View/View.php(246): include('/home/u1108168/...')
+#5 /home/u1108168/tpsInput/system/Common.php(1119): CodeIgniter\View\View->render('menu/kecamatan/...', Array, true)
+#6 /home/u1108168/tpsInput/app/Controllers/Kecamatan.php(34): view('menu/kecamatan/...', Array)
+#7 /home/u1108168/tpsInput/system/CodeIgniter.php(918): App\Controllers\Kecamatan->index()
+#8 /home/u1108168/tpsInput/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kecamatan))
+#9 /home/u1108168/tpsInput/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/u1108168/public_html/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-12-03 06:48:52 --> Invalid file: users/input-data/2.php
+#0 /home/u1108168/tpsInput/system/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('users/input-dat...')
+#1 /home/u1108168/tpsInput/system/Common.php(1119): CodeIgniter\View\View->render('users/input-dat...', Array, true)
+#2 /home/u1108168/tpsInput/app/Controllers/InputData.php(77): view('users/input-dat...', Array)
+#3 /home/u1108168/tpsInput/system/CodeIgniter.php(918): App\Controllers\InputData->index('12')
+#4 /home/u1108168/tpsInput/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#5 /home/u1108168/tpsInput/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/u1108168/public_html/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-03 06:48:59 --> Invalid file: users/input-data/2.php
+#0 /home/u1108168/tpsInput/system/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('users/input-dat...')
+#1 /home/u1108168/tpsInput/system/Common.php(1119): CodeIgniter\View\View->render('users/input-dat...', Array, true)
+#2 /home/u1108168/tpsInput/app/Controllers/InputData.php(77): view('users/input-dat...', Array)
+#3 /home/u1108168/tpsInput/system/CodeIgniter.php(918): App\Controllers\InputData->index('12')
+#4 /home/u1108168/tpsInput/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#5 /home/u1108168/tpsInput/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/u1108168/public_html/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-03 06:49:03 --> Invalid file: users/input-data/2.php
+#0 /home/u1108168/tpsInput/system/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('users/input-dat...')
+#1 /home/u1108168/tpsInput/system/Common.php(1119): CodeIgniter\View\View->render('users/input-dat...', Array, true)
+#2 /home/u1108168/tpsInput/app/Controllers/InputData.php(77): view('users/input-dat...', Array)
+#3 /home/u1108168/tpsInput/system/CodeIgniter.php(918): App\Controllers\InputData->index('12')
+#4 /home/u1108168/tpsInput/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#5 /home/u1108168/tpsInput/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/u1108168/public_html/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-03 07:14:13 --> Division by zero
+#0 /home/u1108168/tpsInput/app/Views/users/home.php(157): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/home/u1108168/...', 157, Array)
+#1 /home/u1108168/tpsInput/system/View/View.php(246): include('/home/u1108168/...')
+#2 /home/u1108168/tpsInput/system/Common.php(1119): CodeIgniter\View\View->render('users/home', Array, true)
+#3 /home/u1108168/tpsInput/app/Controllers/Home.php(44): view('users/home', Array)
+#4 /home/u1108168/tpsInput/system/CodeIgniter.php(918): App\Controllers\Home->index()
+#5 /home/u1108168/tpsInput/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 /home/u1108168/tpsInput/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/u1108168/public_html/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-03 07:15:47 --> Division by zero
+#0 /home/u1108168/tpsInput/app/Views/users/home.php(156): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/home/u1108168/...', 156, Array)
+#1 /home/u1108168/tpsInput/system/View/View.php(246): include('/home/u1108168/...')
+#2 /home/u1108168/tpsInput/system/Common.php(1119): CodeIgniter\View\View->render('users/home', Array, true)
+#3 /home/u1108168/tpsInput/app/Controllers/Home.php(44): view('users/home', Array)
+#4 /home/u1108168/tpsInput/system/CodeIgniter.php(918): App\Controllers\Home->index()
+#5 /home/u1108168/tpsInput/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 /home/u1108168/tpsInput/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/u1108168/public_html/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
